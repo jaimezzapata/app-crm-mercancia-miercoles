@@ -34,3 +34,6 @@ export function alertaRedireccion(redireccion, titulo, mensaje, icono, url) {
         }
     })
 }
+export function generarToken() {
+    return Math.random().toString(36).substring(2, 10) + Math.random().toString(36).substring(2, 10) + Math.random().toString(36).substring(2, 10)
+}
