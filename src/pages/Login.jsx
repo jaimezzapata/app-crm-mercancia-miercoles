@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import {
   alertaError,
@@ -21,9 +21,9 @@ const Login = () => {
       .then((data) => setUsuarios(data))
       .catch((error) => console.log(error));
   }
-  
-  getUsuarios();
- 
+  useEffect(() => {
+    getUsuarios();
+  }, []);
 
   function buscarUsuario() {
     let usuarioEncontrado = usuarios.find(
