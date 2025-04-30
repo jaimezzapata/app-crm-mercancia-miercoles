@@ -12,3 +12,9 @@ body {
   background: url('/fondo.jpg') no-repeat center center fixed;
   background-size: cover;
 }
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}

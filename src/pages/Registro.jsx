@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { alertaError, alertaRedireccion } from "../helpers/funciones";
 import "./Registro.css";
 let apiUsuarios = "http://localhost:3000/usuarios";
@@ -80,6 +80,7 @@ const Registro = () => {
       <button type="button" onClick={registrarUsuario}>
         Registrar
       </button>
+      <Link to="/">¿Ya tiene una cuenta?</Link>
     </form>
   );
 };
