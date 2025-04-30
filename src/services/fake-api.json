@@ -1,16 +1,22 @@
 {
   "usuarios": [
     {
-      "id": 1,
+      "id": "1",
       "nombre": "Jaime Zapata",
       "usuario": "admin",
       "contrasena": "admin"
     },
     {
-      "id": 2,
+      "id": "2",
       "nombre": "Camila Perez",
       "usuario": "camila",
       "contrasena": "camila"
+    },
+    {
+      "id": "a43d",
+      "nombre": "Andrea Caldas",
+      "usuario": "andre",
+      "contrasena": "contraseña"
     }
   ],
   "envios": []

@@ -37,6 +37,7 @@ const Login = () => {
     if (buscarUsuario()) {
       let tokenAcceso = generarToken();
       localStorage.setItem("token", tokenAcceso);
+      localStorage.setItem("usuario", JSON.stringify(buscarUsuario()));
       alertaRedireccion(
         navigate,
         "Bienvenido " + buscarUsuario().nombre,

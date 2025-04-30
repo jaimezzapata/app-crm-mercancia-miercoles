@@ -8,7 +8,7 @@ const Registro = () => {
   const [getUsuario, setUsuario] = useState("");
   const [getPassword, setPassword] = useState("");
   const [getName, setName] = useState("");
-  const [getHoraLogin, setHoraLogin] = useState(null);
+  const [getHoraRegistro, setHoraRegistro] = useState(null);
   const [usuarios, setUsuarios] = useState([]);
   let navigate = useNavigate();
 
@@ -24,52 +24,64 @@ const Registro = () => {
 
   function buscarUsuario() {
     let usuarioEncontrado = usuarios.find(
-      (usuario) =>
-        getUsuario == usuario.usuario && getPassword == usuario.contrasena
+      (usuario) => getUsuario == usuario.usuario
     );
     return usuarioEncontrado;
   }
 
-  function inicioSesion() {
-    if (buscarUsuario()) {
-      let tokenAcceso = generarToken();
-      localStorage.setItem("token", tokenAcceso);
+  function registrarUsuario() {
+    if (!buscarUsuario()) {
+      let nuevoUsuario = {
+        nombre: getName,
+        usuario: getUsuario,
+        contrasena: getPassword,
+      };
+      fetch(apiUsuarios, {
+        method: "POST",
+        body: JSON.stringify(nuevoUsuario),
+      });
       alertaRedireccion(
         navigate,
-        "Bienvenido " + buscarUsuario().nombre,
-        "En breves segundos será redireccionado al Home",
+        "El usuario registrado correctamente",
+        "En breves segundos será redireccionado al login",
         "success",
-        "/home"
+        "/"
       );
       let horaInicio = new Date();
       console.log(horaInicio);
       // setHoraLogin(horaInicio)
       // console.log(getHoraLogin);
     } else {
-      alertaError();
+      alertaError("Error", "Usuario ya existe en la base de datos", "error");
     }
   }
 
   return (
     <form className="form">
-      Sign Up
+      Registro
       <input
         onChange={(e) => setUsuario(e.target.value)}
         type="text"
         className="input"
-        placeholder="Name"
+        placeholder="Usuario"
       />
       <input
         onChange={(e) => setPassword(e.target.value)}
         type="text"
         className="input"
-        placeholder="Password"
+        placeholder="Contraseña"
       />
-      <button type="button" onClick={inicioSesion}>
-        Submit
+      <input
+        onChange={(e) => setName(e.target.value)}
+        type="text"
+        className="input"
+        placeholder="Nombre"
+      />
+      <button type="button" onClick={registrarUsuario}>
+        Registrar
       </button>
     </form>
   );
 };
 
-export default Login;
+export default Registro;

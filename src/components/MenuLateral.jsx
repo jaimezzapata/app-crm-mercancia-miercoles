@@ -4,6 +4,8 @@ import { alertaRedireccion } from "../helpers/funciones"
 const MenuLateral = () => {
   let navigate = useNavigate()
   function cerrarSesion() {
+    localStorage.removeItem("token")
+    localStorage.removeItem("usuario")
     alertaRedireccion(navigate, "Sesion finalizada", "En Breves segundos cerraremos la sesión", "info", "/")
   }
   return (
