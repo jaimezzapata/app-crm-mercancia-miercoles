@@ -25,5 +25,166 @@
       "contrasena": "auxiliar"
     }
   ],
-  "envios": []
+  "envios": [
+    {
+      "id": "e1",
+      "idUsuario": "1",
+      "descripcion": "Documentos legales",
+      "destino": "Bogotá",
+      "fecha": "2025-05-10",
+      "estado": "Entregado"
+    },
+    {
+      "id": "e2",
+      "idUsuario": "1",
+      "descripcion": "Equipos electrónicos",
+      "destino": "Medellín",
+      "fecha": "2025-05-11",
+      "estado": "En tránsito"
+    },
+    {
+      "id": "e3",
+      "idUsuario": "1",
+      "descripcion": "Papelería",
+      "destino": "Cali",
+      "fecha": "2025-05-12",
+      "estado": "Pendiente"
+    },
+    {
+      "id": "e4",
+      "idUsuario": "1",
+      "descripcion": "Regalos corporativos",
+      "destino": "Barranquilla",
+      "fecha": "2025-05-13",
+      "estado": "Entregado"
+    },
+    {
+      "id": "e5",
+      "idUsuario": "1",
+      "descripcion": "Libros técnicos",
+      "destino": "Pereira",
+      "fecha": "2025-05-14",
+      "estado": "En tránsito"
+    },
+    {
+      "id": "e6",
+      "idUsuario": "2",
+      "descripcion": "Material de oficina",
+      "destino": "Bogotá",
+      "fecha": "2025-05-10",
+      "estado": "Pendiente"
+    },
+    {
+      "id": "e7",
+      "idUsuario": "2",
+      "descripcion": "Insumos médicos",
+      "destino": "Manizales",
+      "fecha": "2025-05-11",
+      "estado": "En tránsito"
+    },
+    {
+      "id": "e8",
+      "idUsuario": "2",
+      "descripcion": "Obsequios",
+      "destino": "Neiva",
+      "fecha": "2025-05-12",
+      "estado": "Entregado"
+    },
+    {
+      "id": "e9",
+      "idUsuario": "2",
+      "descripcion": "Instrumental quirúrgico",
+      "destino": "Cartagena",
+      "fecha": "2025-05-13",
+      "estado": "En tránsito"
+    },
+    {
+      "id": "e10",
+      "idUsuario": "2",
+      "descripcion": "Ropa médica",
+      "destino": "Santa Marta",
+      "fecha": "2025-05-14",
+      "estado": "Entregado"
+    },
+    {
+      "id": "e11",
+      "idUsuario": "a43d",
+      "descripcion": "Formularios",
+      "destino": "Ibagué",
+      "fecha": "2025-05-10",
+      "estado": "Pendiente"
+    },
+    {
+      "id": "e12",
+      "idUsuario": "a43d",
+      "descripcion": "Medicamentos",
+      "destino": "Cúcuta",
+      "fecha": "2025-05-11",
+      "estado": "Entregado"
+    },
+    {
+      "id": "e13",
+      "idUsuario": "a43d",
+      "descripcion": "Catálogos de ventas",
+      "destino": "Tunja",
+      "fecha": "2025-05-12",
+      "estado": "En tránsito"
+    },
+    {
+      "id": "e14",
+      "idUsuario": "a43d",
+      "descripcion": "Tarjetas de presentación",
+      "destino": "Popayán",
+      "fecha": "2025-05-13",
+      "estado": "Pendiente"
+    },
+    {
+      "id": "e15",
+      "idUsuario": "a43d",
+      "descripcion": "Muestras de producto",
+      "destino": "Villavicencio",
+      "fecha": "2025-05-14",
+      "estado": "Entregado"
+    },
+    {
+      "id": "e16",
+      "idUsuario": "6acb",
+      "descripcion": "Herramientas",
+      "destino": "Armenia",
+      "fecha": "2025-05-10",
+      "estado": "En tránsito"
+    },
+    {
+      "id": "e17",
+      "idUsuario": "6acb",
+      "descripcion": "Facturas",
+      "destino": "Quibdó",
+      "fecha": "2025-05-11",
+      "estado": "Entregado"
+    },
+    {
+      "id": "e18",
+      "idUsuario": "6acb",
+      "descripcion": "Uniformes",
+      "destino": "Leticia",
+      "fecha": "2025-05-12",
+      "estado": "Pendiente"
+    },
+    {
+      "id": "e19",
+      "idUsuario": "6acb",
+      "descripcion": "Impresoras",
+      "destino": "San Andrés",
+      "fecha": "2025-05-13",
+      "estado": "Entregado"
+    },
+    {
+      "id": "e20",
+      "idUsuario": "6acb",
+      "descripcion": "Soportes técnicos",
+      "destino": "Sincelejo",
+      "fecha": "2025-05-14",
+      "estado": "En tránsito"
+    }
+  ]
 }
