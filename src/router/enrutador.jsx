@@ -4,10 +4,22 @@ import Home from "../pages/Home";
 import Login from "../pages/Login";
 import RutaProtegida from "../components/RutaProtegida";
 import Registro from "../pages/Registro";
+import GestionEnvios from "../pages/GestionEnvios";
+import GestionClientes from "../pages/GestionClientes";
 export let enrutador = [
   {
-    path: "/home",
+    path: "/home/",
     element: <RutaProtegida proteger={<Home />} />,
+    children: [
+      {
+        path: "envios",
+        element: <GestionEnvios />,
+      },
+      {
+        path: "clientes",
+        element: <GestionClientes />,
+      },
+    ],
   },
   {
     path: "/",

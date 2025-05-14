@@ -39,7 +39,9 @@ const Registro = () => {
       fetch(apiUsuarios, {
         method: "POST",
         body: JSON.stringify(nuevoUsuario),
-      });
+      }).then(() => {
+        getUsuarios();
+      }).catch((error) => console.log(error))
       alertaRedireccion(
         navigate,
         "El usuario registrado correctamente",

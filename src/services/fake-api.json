@@ -17,6 +17,12 @@
       "nombre": "Andrea Caldas",
       "usuario": "andre",
       "contrasena": "contraseña"
+    },
+    {
+      "id": "6acb",
+      "nombre": "Ana Restrepo",
+      "usuario": "auxiliar",
+      "contrasena": "auxiliar"
     }
   ],
   "envios": []
