@@ -10,7 +10,13 @@ export function alertaConfirmacion(id, apiEnvios, getEnvios) {
     confirmButtonText: "Si, Eliminar!"
   }).then((result) => {
     if (result.isConfirmed) {
-      /* Fetch */
+      fetch(apiEnvios + "/" + id, {
+        method: "DELETE"
+      }).then(() => {
+        getEnvios()
+      }).catch((error) => {
+        console.log(error)
+      })
       Swal.fire({
         title: "Eliminado",
         text: "El registro ha sido eliminado",
