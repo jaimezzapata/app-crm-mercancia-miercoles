@@ -169,6 +169,38 @@
       "destino": "Sincelejo",
       "fecha": "2025-05-14",
       "estado": "En tránsito"
+    },
+    {
+      "id": "f582",
+      "descripcion": "Tecnología",
+      "destino": "Barranquilla",
+      "fecha": "2025-05-21",
+      "estado": "Creado",
+      "idUsuario": "1"
+    },
+    {
+      "id": "4999",
+      "descripcion": "Tecnología",
+      "destino": "Barranquilla",
+      "fecha": "2025-05-21",
+      "estado": "Creado",
+      "idUsuario": "1"
+    },
+    {
+      "id": "79b4",
+      "descripcion": "Tecnología",
+      "destino": "Barranquilla",
+      "fecha": "2025-05-21",
+      "estado": "Creado",
+      "idUsuario": "1"
+    },
+    {
+      "id": "e5ce",
+      "descripcion": "Mercancía Apple",
+      "destino": "San Andres",
+      "fecha": "2025-05-21",
+      "estado": "Pendiente",
+      "idUsuario": "1"
     }
   ]
 }
