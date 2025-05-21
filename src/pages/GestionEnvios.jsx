@@ -29,6 +29,9 @@ const GestionEnvios = () => {
   return (
     <div>
       <h1>Gestión Envíos</h1>
+      <div className="card__buttons">
+        <Link to="crear-envio" className="card__button">Registrar Envio</Link>
+      </div>
       <section className="cards">
         {filtradoUsuario.map((item) => (
           <div className="card">

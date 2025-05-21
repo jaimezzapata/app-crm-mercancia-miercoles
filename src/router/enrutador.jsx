@@ -6,6 +6,8 @@ import RutaProtegida from "../components/RutaProtegida";
 import Registro from "../pages/Registro";
 import GestionEnvios from "../pages/GestionEnvios";
 import GestionClientes from "../pages/GestionClientes";
+import CrearEnvio from "../pages/CrearEnvio";
+import EditarEnvio from "../pages/EditarEnvio";
 export let enrutador = [
   {
     path: "/home/",
@@ -19,6 +21,14 @@ export let enrutador = [
         path: "clientes",
         element: <GestionClientes />,
       },
+      {
+        path: "crear-envio",
+        element: <CrearEnvio />
+      },
+      {
+        path: "editar-envio",
+        element: <EditarEnvio />
+      }
     ],
   },
   {
