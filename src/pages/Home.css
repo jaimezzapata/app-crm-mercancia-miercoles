@@ -170,7 +170,8 @@
 .card {
   position: relative;
   width: 230px;
-  height: 40%;
+  height: 250px;
+  padding: 15px;
   margin: 0 auto;
   border: solid 1.5px #731702;
   border-radius: 8px;
@@ -281,6 +282,7 @@
 .card__buttons button:first-child {
   background-color: #ca9d66;
 }
+
 .card__buttons button:last-child {
   background-color: white;
 }
@@ -289,7 +291,13 @@
   width: 45%;
   cursor: pointer;
   background: none;
+  text-decoration: none;
+  height: 30px;
   border: solid 1px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
 }
 
 .cards__vacias {

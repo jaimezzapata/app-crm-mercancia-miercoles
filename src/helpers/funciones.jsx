@@ -1,9 +1,22 @@
 import Swal from "sweetalert2";
-export function alertaConfirmacion() {
+export function alertaConfirmacion(id, apiEnvios, getEnvios) {
   Swal.fire({
-    title: "Bievenido",
-    text: "Ha iniciado seción de forma correcta!",
-    icon: "success",
+    title: "Está seguro?",
+    text: "No se puede reviertir la acción!",
+    icon: "warning",
+    showCancelButton: true,
+    confirmButtonColor: "#3085d6",
+    cancelButtonColor: "#d33",
+    confirmButtonText: "Si, Eliminar!"
+  }).then((result) => {
+    if (result.isConfirmed) {
+      /* Fetch */
+      Swal.fire({
+        title: "Eliminado",
+        text: "El registro ha sido eliminado",
+        icon: "success"
+      });
+    }
   });
 }
 export function alertaError(titulo, mensaje, icono) {

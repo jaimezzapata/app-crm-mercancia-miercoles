@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { alertaConfirmacion } from "../helpers/funciones";
 let apiEnvios = "http://localhost:3000/envios";
 
 const GestionEnvios = () => {
@@ -21,6 +22,10 @@ const GestionEnvios = () => {
   }
   let filtradoUsuario = filtrarEnviosUsuario();
 
+  function eliminarEnvio(id) {
+    alertaConfirmacion(id, apiEnvios, getEnvios)
+  }
+
   return (
     <div>
       <h1>Gestión Envíos</h1>
@@ -34,7 +39,7 @@ const GestionEnvios = () => {
             <p>Fecha: {item.fecha}</p>
             <p>Estado: {item.estado}</p>
             <div className="card__buttons">
-              <button className="card__button">Eliminar</button>
+              <button onClick={() => eliminarEnvio(item.id)} className="card__button">Eliminar</button>
               <Link className="card__button">Editar</Link>
             </div>
           </div>
