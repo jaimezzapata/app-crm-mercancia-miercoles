@@ -23,12 +23,12 @@ export let enrutador = [
       },
       {
         path: "crear-envio",
-        element: <CrearEnvio />
+        element: <CrearEnvio />,
       },
       {
-        path: "editar-envio",
-        element: <EditarEnvio />
-      }
+        path: "editar/:id",
+        element: <EditarEnvio />,
+      },
     ],
   },
   {

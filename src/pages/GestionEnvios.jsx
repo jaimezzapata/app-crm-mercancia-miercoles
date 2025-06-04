@@ -23,14 +23,16 @@ const GestionEnvios = () => {
   let filtradoUsuario = filtrarEnviosUsuario();
 
   function eliminarEnvio(id) {
-    alertaConfirmacion(id, apiEnvios, getEnvios)
+    alertaConfirmacion(id, apiEnvios, getEnvios);
   }
 
   return (
     <div>
       <h1>Gestión Envíos</h1>
       <div className="card__buttons">
-        <Link to="/home/crear-envio" className="card__button">Registrar Envio</Link>
+        <Link to="/home/crear-envio" className="card__button">
+          Registrar Envio
+        </Link>
       </div>
       <section className="cards">
         {filtradoUsuario.map((item) => (
@@ -42,8 +44,15 @@ const GestionEnvios = () => {
             <p>Fecha: {item.fecha}</p>
             <p>Estado: {item.estado}</p>
             <div className="card__buttons">
-              <button onClick={() => eliminarEnvio(item.id)} className="card__button">Eliminar</button>
-              <Link className="card__button">Editar</Link>
+              <button
+                onClick={() => eliminarEnvio(item.id)}
+                className="card__button"
+              >
+                Eliminar
+              </button>
+              <Link to={"/home/editar/" + item.id} className="card__button">
+                Editar
+              </Link>
             </div>
           </div>
         ))}
